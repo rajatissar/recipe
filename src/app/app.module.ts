@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { AppRoutingModule } from './app-routing.module';
+// components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -12,6 +12,9 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+// modules
+import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
