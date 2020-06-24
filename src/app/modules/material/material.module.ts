@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 // import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
 // import { MatButtonToggleModule } from '@angular/material/button-toggle';
-// import { MatCardModule } from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 // import { MatCheckboxModule } from '@angular/material/checkbox';
 // import { MatChipsModule } from '@angular/material/chips';
 // import { MatStepperModule } from '@angular/material/stepper';
@@ -45,7 +45,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatBottomSheetModule,
     MatButtonModule,
     // MatButtonToggleModule,
-    // MatCardModule,
+    MatCardModule,
     // MatCheckboxModule,
     // MatChipsModule,
     // MatStepperModule,
@@ -82,7 +82,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatBottomSheetModule,
     MatButtonModule,
     // MatButtonToggleModule,
-    // MatCardModule,
+    MatCardModule,
     // MatCheckboxModule,
     // MatChipsModule,
     // MatStepperModule,

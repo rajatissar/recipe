@@ -1,25 +1,12 @@
 <div class="mat-app-background basic-container">
-    <button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
-    <mat-menu #aboveMenu="matMenu" yPosition="above">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
+    <button mat-button [matMenuTriggerFor]="recipeMenu">Recipe</button>
+    <mat-menu #recipeMenu="matMenu" yPosition="above">
+        <button mat-menu-item>Recipe List</button>
+        <button mat-menu-item>Recipe Detail</button>
     </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">
-        <button mat-menu-item>Item 3</button>
-        <button mat-menu-item>Item 4</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
-    <mat-menu #beforeMenu="matMenu" xPosition="before">
-        <button mat-menu-item>Item 5</button>
-        <button mat-menu-item>Item 6</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="afterMenu">After</button>
-    <mat-menu #afterMenu="matMenu" xPosition="after">
-        <button mat-menu-item>Item 7</button>
-        <button mat-menu-item>Item 8</button>
+    <button mat-button [matMenuTriggerFor]="shoppingMenu">Shopping</button>
+    <mat-menu #shoppingMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Shopping List</button>
     </mat-menu>
 </div>
