@@ -1,1 +1,12 @@
-<p>shopping-edit works!</p>
+<!-- <form class="example-form"> -->
+<mat-form-field class="example-full-width">
+    <!-- <mat-label>Favorite food</mat-label> -->
+    <input matInput placeholder="Enter name" #nameInput>
+</mat-form-field>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter amount" #amountInput>
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onAdd()"> Add </button>
+<button mat-raised-button color="warn"> Delete </button>
+<button mat-raised-button color="accent"> Clear </button>
+<!-- </form> -->

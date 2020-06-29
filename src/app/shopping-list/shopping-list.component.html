@@ -1,1 +1,2 @@
-<p *ngFor="let ingredient of ingredients">{{ingredient.name}} ({{ingredient.amount}})</p>
+<app-shopping-edit (ingredientAdded)="onIngredientAdded($event)"></app-shopping-edit>
+<mat-card *ngFor="let ingredient of ingredients"> {{ingredient.name}} ({{ingredient.amount}}) </mat-card>
