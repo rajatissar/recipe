@@ -1,12 +1,11 @@
 <div class="mat-app-background basic-container">
-    <button mat-button [matMenuTriggerFor]="recipeMenu">Recipe</button>
+    <button mat-button [matMenuTriggerFor]="recipeMenu"> Recipe </button>
     <mat-menu #recipeMenu="matMenu" yPosition="above">
-        <button mat-menu-item>Recipe List</button>
-        <button mat-menu-item>Recipe Detail</button>
+        <button mat-menu-item routerLink="recipe-list"> Recipe List </button>
     </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="shoppingMenu">Shopping</button>
+    <button mat-button [matMenuTriggerFor]="shoppingMenu"> Shopping </button>
     <mat-menu #shoppingMenu="matMenu" yPosition="below">
-        <button mat-menu-item>Shopping List</button>
+        <button mat-menu-item routerLink="shopping-list"> Shopping List </button>
     </mat-menu>
 </div>
