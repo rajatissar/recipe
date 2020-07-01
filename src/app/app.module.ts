@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // components
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { MaterialModule } from './modules/material/material.module';
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
+    FlexLayoutModule,
     AppRoutingModule,
     MaterialModule,
   ],
