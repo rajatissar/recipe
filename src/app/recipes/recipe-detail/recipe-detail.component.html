@@ -11,9 +11,28 @@
             {{ingredient.name}} - {{ingredient.amount}}
         </p>
     </mat-card-content>
-    <!-- <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-    </mat-card-actions> -->
+    <mat-card-actions>
+        <!-- <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button> -->
+
+        <button mat-button [matMenuTriggerFor]="manageRecipeMenu"> Manage Recipe </button>
+        <button mat-icon-button [matMenuTriggerFor]="manageRecipeMenu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #manageRecipeMenu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>add_shopping_cart</mat-icon>
+                <span> To Shopping List </span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>edit</mat-icon>
+                <span> Edit Recipe </span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>delete</mat-icon>
+                <span> Delete Recipe </span>
+            </button>
+        </mat-menu>
+    </mat-card-actions>
 </mat-card>
 <!-- </div> -->
