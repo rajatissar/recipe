@@ -3,8 +3,11 @@ import {
   EventEmitter
 } from '@angular/core';
 
+// models
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../shared/modals/ingredient.modal';
+// services
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 @Injectable({
   providedIn: 'root'
@@ -45,9 +48,13 @@ export class RecipeService {
       ]
     )];
 
-  constructor() { }
+  constructor(private shoppingListService: ShoppingListService) { }
 
   getRecipes() {
     return this.recipes;
+  }
+
+  addIngredientToShoppingList(ingredients: Ingredient[]) {
+    this.shoppingListService.addIngredients(ingredients);
   }
 }

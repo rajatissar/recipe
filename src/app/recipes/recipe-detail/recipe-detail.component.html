@@ -20,7 +20,7 @@
             <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #manageRecipeMenu="matMenu">
-            <button mat-menu-item>
+            <button mat-menu-item (click)="onAddToShoppingList(recipe.ingredients)">
                 <mat-icon>add_shopping_cart</mat-icon>
                 <span> To Shopping List </span>
             </button>

@@ -4,7 +4,11 @@ import {
   Input
 } from '@angular/core';
 
+// models
 import { Recipe } from '../recipe.model';
+import { Ingredient } from '../../shared/modals/ingredient.modal';
+// services
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -14,9 +18,13 @@ import { Recipe } from '../recipe.model';
 export class RecipeDetailComponent implements OnInit {
   @Input() recipe: Recipe;
 
-  constructor() { }
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
+  }
+
+  onAddToShoppingList(ingredients: Ingredient[]) {
+    this.recipeService.addIngredientToShoppingList(ingredients);
   }
 
 }
