@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { Ingredient } from '../shared/modals/ingredient.modal';
 import { ShoppingListService } from './shopping-list.service';
@@ -12,8 +13,11 @@ import { ShoppingListService } from './shopping-list.service';
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[];
 
-  constructor(private shoppingListService: ShoppingListService) {
-  }
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private shoppingListService: ShoppingListService
+  ) { }
 
   ngOnInit(): void {
     this.ingredients = this.shoppingListService.getIngredients();
@@ -21,6 +25,7 @@ export class ShoppingListComponent implements OnInit {
 
   onIngredientAdded(ingredient: Ingredient) {
     this.shoppingListService.addIngredient(ingredient);
+    // this.router.navigate(['not-existed-route'], { relativeTo: this.activatedRoute });
   }
 
 }
